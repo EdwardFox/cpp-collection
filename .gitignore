@@ -13,6 +13,8 @@
 *.a
 
 */build
+*/html
+*/latex
 
 tags
 .ycm_extra_conf.py
