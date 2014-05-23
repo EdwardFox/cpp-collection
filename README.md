@@ -9,6 +9,7 @@ The current selection includes:
     - Includes a proper gameloop with unlimited frames and an update rate of 60 times per second
     - Memory management via smart pointers
 
+
 * **Pathfinding example**
     - An example implementation of Dijkstra and A\* Pathfinding algorithms
     - Uses SFML for input and visualization
