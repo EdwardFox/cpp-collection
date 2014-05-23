@@ -17,4 +17,3 @@ The current selection includes:
         - Drag&Drop start and end nodes
         - Click&Drag to create/remove walls
         - H key will toggle between Dijkstra and A\*
-        - Visual updates occur when creating/removing walls and toggling between the pathfinding algorithms
