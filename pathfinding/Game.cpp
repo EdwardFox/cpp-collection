@@ -33,6 +33,7 @@ void Game::run() {
 void Game::update(sf::Time dt)
 {
     mWorld.update(dt);
+    mWorld.findPath(mHeuristic);
 }
 
 void Game::render()
@@ -72,7 +73,7 @@ void Game::handleInput(sf::Event event)
         else
             mHeuristic = Heuristic::NONE;
 
-        mWorld.findPath(mHeuristic);
+        //mWorld.findPath(mHeuristic);
     }
         
     // Mouse Input Stuff
@@ -83,7 +84,7 @@ void Game::handleInput(sf::Event event)
     // If we have found an entity, handle the different input states for left clicking
     if(ent != NULL) {
         if(sf::Mouse::isButtonPressed(sf::Mouse::Left)) {
-            mWorld.findPath(mHeuristic);
+            //mWorld.findPath(mHeuristic);
 
             switch(mInputState) {
                 // Check which kind of node we have clicked and set state accordingly

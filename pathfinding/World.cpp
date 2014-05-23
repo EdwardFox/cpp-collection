@@ -251,7 +251,7 @@ float World::getHeuristicValue(Heuristic heu, const Entity* const ent) const
             sf::Vector2f goalPos = mGoalNode->getPosition();
             float distX = abs(entPos.x - goalPos.x);
             float distY = abs(entPos.y - goalPos.y);
-            result = sqrt(pow(distX, 2) + pow(distY, 2)) / BOX_SIZE;
+            result = sqrt(pow(distX, 2) + pow(distY, 2)) / (BOX_SIZE/2);
             break;
         }
         default:
